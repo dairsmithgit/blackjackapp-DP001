@@ -9,13 +9,19 @@
   </head>
   <body>
     <h1 class="casinoName">The Tops Casino</h1>
-    <h1 class="gameName">Blackjack</h1>
-    <p id="messageElement">Want to go a round or two?</p>
-    <p id="cardsElement">Cards:</p>
-    <p id="sumElement">Sum:</p>
+    <h2 class="gameName">Blackjack</h2>
+    <p id="message">Want to go a round or two?</p>
+    <div class="formContainer">
+      <p>Player name:</p>
+      <input type="text" id="formInput" name="nameinput" />
+      <button type="button" onclick="setName()">Set name</button>
+    </div>
+    <p id="cards">Cards:</p>
+    <p id="sum">Sum:</p>
     <button class="startButton" onclick="startGame()">Start Game</button>
     <button class="hitButton" onclick="hit()">Hit</button>
-    <p id="playerElement"></p>
+    <button class="stayButton" onclick="stay()">Stay</button>
+    <p id="player"></p>
     <script src="script.js"></script>
   </body>
 </html>
